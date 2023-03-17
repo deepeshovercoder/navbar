@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating a navigation bar</title>
+    <link rel="shortcut icon" href="html img.jpg" type="image/jpeg">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .navbar {
+            background-color: black;
+            border-radius: 15px;
+            border: 3px solid white;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 20px 20px;
+        }
+
+        .navbar li a {
+            padding: 5px 3px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .search {
+            color: white;
+            float: right;
+            padding: 10px 10px;
+        }
+
+        .navbar input {
+            border: 2px solid red;
+            border-radius: 20px;
+            padding: 10px 10px;
+            width: 300px;
+            font-size: 15px;
+        }
+
+        .navbar li a:hover {
+            color: yellow;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home </a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                </div>
+
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
